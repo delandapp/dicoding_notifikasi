@@ -2,6 +2,10 @@
     <!-- TODOS Di sini kita akan menambahkan dua permission yaitu VIBRATE yang berfungsi untuk menambahkan fungsi getar ketika notifikasi muncul dan juga RECEIVE_BOOT_COMPLETED yang berfungsi untuk melakukan penjadwalan notifikasi. Tambahkan beberapa permission di bawah ini di atas dari -->
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- TODOS WAKE_LOCK untuk menjaga CPU perangkat fisik tetap menyala dan SCHEDULE_EXACT_ALARM berfungsi sebagai menampilkan notifikasi di waktu yang tepat.  -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!-- For apps with targetSDK=31 (Android 12) -->
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
     <application android:label="dicoding_notifikasi" android:name="${applicationName}" android:icon="@mipmap/ic_launcher">
         <activity android:name=".MainActivity" android:exported="true" android:launchMode="singleTop" android:taskAffinity="" android:theme="@style/LaunchTheme" android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode" android:hardwareAccelerated="true" android:windowSoftInputMode="adjustResize">
             <!-- Specifies an Android theme to apply to this Activity as soon as
